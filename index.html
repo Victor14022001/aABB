@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  <div class="login-container">
+    <img src="logo.png" alt="Logo" class="logo">
+    <h2>Login</h2>
+    <!-- ID hinzugefügt & action entfernt -->
+    <form id="loginForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Passwort</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Einloggen</button>
+
+      <p>Noch keinen Account? <a href="register.html">Hier registrieren</a></p>
+
+
+    </form>
+
+    <!-- Hier erscheint die Fehlermeldung -->
+    <p id="error" style="color: red;"></p>
+
+  </div>
+
+  <!-- Script hinzufügen -->
+  <script src="script.js"></script>
+</body>
+</html>
