@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt anfrage</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="login-container">
+    <h1>Kontaktformular</h1>
+    <form id="contactForm">
+        <label for="subject">Betreff:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+    
+        <label for="message">Nachricht:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    
+        <button type="submit">Absenden</button>
+    </form>
+    
+    <p id="response"></p>
+  
+<script src="contacts.js"></script>
+</body>
+</html>
