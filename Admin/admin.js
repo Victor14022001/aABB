@@ -7,8 +7,6 @@ async function loadContacts() {
         const tbody = document.querySelector('#contactsTable tbody');
         tbody.innerHTML = '';  // altes leeren
 
-        // Hallo ich bin 
-
         data.contacts.forEach((c, i) => {
             const tr = document.createElement('tr');
             tr.innerHTML = `

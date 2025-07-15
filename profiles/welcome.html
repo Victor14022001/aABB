@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willkommen</title>
+</head>
+<body>
+    <h1>Willkommen auf der Profilseite!</h1>
+    <p>Hier sind Ihre persönlichen Informationen:</p>
+    <ul>
+        <li><strong>Name:</strong> <span id="userName">–</span></li>
+        <li><strong>Email:</strong> <span id="userEmail">Nicht verfügbar</span></li>
+        <li><strong>Rolle:</strong> Benutzer</li>
+    </ul>
+
+    <script>
+        const name = localStorage.getItem("username");
+        if (name) {
+            document.getElementById("userName").textContent = name;
+            const email = localStorage.getItem("useremail");
+            document.getElementById("userEmail").textContent = email ? email : "Nicht verfügbar";
+        } else {
+            document.getElementById("userName").textContent = "Nicht eingeloggt";
+        }
+    </script>
+</body>
+</html>

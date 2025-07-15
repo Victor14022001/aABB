@@ -60,7 +60,9 @@ app.post('/login', (req, res) => {
         }
 
         if (row) {
-            res.json({ success: true, message: 'Login erfolgreich', name: row.name });
+            res.json({ success: true, message: 'Login erfolgreich', name: row.name, email: row.email });
+
+           // res.json({ success: true, message: 'Login erfolgreich', name: row.name });
         } else {
             res.status(401).json({ success: false, message: 'Ungültige Anmeldedaten' });
         }
